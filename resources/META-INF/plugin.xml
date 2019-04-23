@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>immortal.me.dart_json_convert</id>
+  <name>DartJsonCovert</name>
+  <version>1.0.0</version>
+  <vendor email="immortalz.cn@gmail.com" url="https://github.com/ImmortalZ/DartJsonConvert">github</vendor>
+
+  <description><![CDATA[
+      step1：select the specify Class <br>
+      step2：Code -> Generate -> DartJsonConvert <br>
+      step3：generate target code <br>
+      <img src="https://cdn.nlark.com/yuque/0/2019/gif/114830/1555858553231-f775e28f-b1ca-48ef-9d42-f4dd9dff16e1.gif"><br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="107.121"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="DartJsonConvert" class="me.immortalz.dartjsonconvert.ConvertAction" text="DartJsonConvert" description="dart json convert">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl c"/>
+    </action>
+  </actions>
+
+</idea-plugin>
